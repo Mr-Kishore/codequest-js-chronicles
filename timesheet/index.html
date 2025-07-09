@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Timesheet Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Timesheet Tracker</h1>
+
+  <table id="timesheet-table" border="1">
+    <thead>
+      <tr>
+        <th>Task</th>
+        <th>Mon</th>
+        <th>Tue</th>
+        <th>Wed</th>
+        <th>Thur</th>
+        <th>Friday</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="data-rows">
+      <!-- Dynamic rows go here -->
+    </tbody>
+    <tfoot>
+      <tr id="input-row">
+        <td>
+          <select id="task-dropdown">
+            <option value="">-- Select Task --</option>
+            <option value="UI Design">UI Design</option>
+            <option value="Bug Fixing">Bug Fixing</option>
+            <option value="Code Review">Code Review</option>
+            <option value="Meeting">Meeting</option>
+            <option value="Documentation">Documentation</option>
+          </select>
+        </td>
+        <td><input type="text" class="time-input" data-day="Mon"></td>
+        <td><input type="text" class="time-input" data-day="Tue"></td>
+        <td><input type="text" class="time-input" data-day="Wed"></td>
+        <td><input type="text" class="time-input" data-day="Thur"></td>
+        <td><input type="text" class="time-input" data-day="Friday"></td>
+        <td>
+          <button id="add-btn">Add</button>
+          <button id="cancel-btn">Cancel</button>
+          <button id="submit-btn">Submit</button>
+        </td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <pre id="output-json"></pre>
+
+  <script src="script.js"></script>
+</body>
+</html>
