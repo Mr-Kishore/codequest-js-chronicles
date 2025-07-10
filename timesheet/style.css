@@ -50,6 +50,25 @@ button:hover {
   background-color: #e0e0e0;
 }
 
+#submit-btn {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+#submit-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.button-row {
+  text-align: center;
+  margin-top: 10px;
+}
+
 #output-json {
   margin-top: 20px;
   padding: 10px;
